@@ -17,11 +17,6 @@ export async function script(octokit, repository, {defaults = false, path = null
     return
   }
 
-  if (repository.size === 0) {
-    octokit.log.info({change: false}, `repository is empty`)
-    return
-  }
-
   // fail fast
   if (!defaults && !path && !template) {
     throw new Error(`Either --defaults, --path or --template must be defined`)
