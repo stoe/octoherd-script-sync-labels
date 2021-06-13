@@ -29,7 +29,7 @@
     "test": "eslint ."
   },
   "dependencies": {
-    "@octoherd/cli": "^3.3.0"
+    "@octoherd/cli": "^3.3.3"
   },
   "devDependencies": {
     "@github/prettier-config": "^0.0.4",
