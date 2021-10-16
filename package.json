@@ -1,7 +1,7 @@
 {
   "name": "@stoe/octoherd-script-sync-labels",
   "type": "module",
-  "version": "1.2.0-alpha",
+  "version": "1.2.0",
   "description": "",
   "keywords": [
     "octohed-script"
