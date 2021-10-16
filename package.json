@@ -27,7 +27,8 @@
   "scripts": {
     "format": "npx prettier --config-precedence prefer-file --write . && eslint . --fix",
     "pretest": "npx eslint-config-prettier .eslintrc.json",
-    "test": "eslint ."
+    "test": "eslint .",
+    "prepare": "node ./.github/husky/prepare.cjs"
   },
   "dependencies": {
     "@octoherd/cli": "^3.4.4"
@@ -36,7 +37,14 @@
     "@github/prettier-config": "^0.0.4",
     "eslint": "^7.32.0, <8",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-github": "^4.3.2"
+    "eslint-plugin-github": "^4.3.2",
+    "husky": "^7.0.2"
   },
-  "prettier": "@github/prettier-config"
+  "prettier": "@github/prettier-config",
+  "husky": {
+    "hooks": {
+      "pre-commit": "./.github/husky/pre-commit",
+      "pre-push": "./.github/husky/pre-push"
+    }
+  }
 }
