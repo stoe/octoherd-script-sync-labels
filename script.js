@@ -1,5 +1,6 @@
-import {readFileSync} from 'fs'
+// eslint-disable-next-line import/extensions
 import defaultLabels from './labels.js'
+import {readFileSync} from 'fs'
 
 /**
  * @param {import('@octoherd/cli').Octokit} octokit

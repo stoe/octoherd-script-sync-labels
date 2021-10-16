@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
-import {script} from './script.js'
+// eslint-disable-next-line import/no-unresolved
 import {run} from '@octoherd/cli/run'
+// eslint-disable-next-line import/extensions
+import {script} from './script.js'
 
 run(script)
